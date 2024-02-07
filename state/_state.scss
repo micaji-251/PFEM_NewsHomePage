@@ -1,0 +1,9 @@
+.mainBtn:hover, .mainBtn:focus{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.storyTitle:hover, .storyTitle:focus, .topStoryTitle:focus, .topStoryTitle:hover,.navBar li:hover,.navBar li:focus{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}

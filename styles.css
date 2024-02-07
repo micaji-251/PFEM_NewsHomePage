@@ -1,0 +1,242 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/static/Inter-Regular.ttf") format("ttf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/static/Inter-Bold.ttf") format("ttf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/static/Inter-ExtraBold.ttf") format("ttf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+}
+
+.flex {
+  display: flex;
+}
+.flex--between {
+  justify-content: space-between;
+}
+
+body {
+  padding: 20px;
+}
+
+.none {
+  display: none;
+}
+
+section {
+  margin: 40px 0;
+}
+
+@media (min-width: 800px) {
+  .flex--responsive {
+    display: flex;
+  }
+}
+.blackScreen {
+  background-color: rgba(3, 3, 31, 0.377);
+}
+
+.mainTitle {
+  padding: 15px 0;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.mainText {
+  line-height: 1.5;
+  color: hsl(236, 13%, 42%);
+  font-size: 1rem;
+}
+
+.mainBtn {
+  background-color: hsl(5, 85%, 63%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: white;
+  padding: 15px 40px;
+  margin: 20px 0 10px;
+  border: none;
+}
+
+@media (min-width: 800px) {
+  .mainStory {
+    padding-right: 20px;
+    width: 65%;
+  }
+  .mainStoryImgContainer {
+    height: 250px;
+    overflow: hidden;
+  }
+  .mainStoryImgContainer img {
+    width: 100%;
+  }
+  .mainTitle {
+    width: 50%;
+    font-size: 3rem;
+    padding-bottom: 0;
+  }
+  .mainTextContainer {
+    padding: 20px 0 0 30px;
+    width: 50%;
+  }
+  .mainBtn {
+    margin: 40px 0 0;
+  }
+}
+.newStories {
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px;
+}
+.newStoriesTitle {
+  color: hsl(35, 77%, 62%);
+  font-size: 2.5rem;
+}
+
+.story {
+  color: white;
+  padding: 20px 0 10px 0;
+  border-bottom: rgba(255, 255, 255, 0.208) 1px solid;
+}
+.story:last-child {
+  border: none;
+}
+.story .storyTitle {
+  font-size: 1.45rem;
+}
+.story .storyText {
+  color: hsl(233, 8%, 69%);
+  padding: 10px 0 10px 0;
+  line-height: 1.8;
+}
+
+@media (min-width: 800px) {
+  .newStories {
+    width: 35%;
+  }
+}
+.topStories {
+  margin: 20px 0;
+}
+
+.topStory {
+  padding: 15px 0;
+}
+
+.topStoryImgContainer {
+  width: 30%;
+  overflow: hidden;
+}
+.topStoryImgContainer img {
+  width: 100%;
+}
+
+.topStoryText {
+  width: 70%;
+  padding: 0 20px 0 20px;
+}
+
+.number {
+  color: hsl(233, 8%, 79%);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.topStoryTitle {
+  font-weight: 800;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.topStoryText2 {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+header {
+  padding: 20px 0;
+}
+
+@media (max-width: 699px) {
+  .navBar {
+    position: absolute;
+    padding: 120px 30px;
+    background-color: white;
+    width: 50%;
+    left: 40%;
+    height: 100%;
+    top: 0px;
+  }
+  .navBar li {
+    padding: 15px 0;
+  }
+  .navBar .closeBtn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 75%;
+  }
+  .navBar .openBtn {
+    display: block;
+  }
+  .noneMobile {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  .navBar ul {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .navBar li {
+    width: 80px;
+  }
+  .navBar .closeBtn {
+    display: none;
+  }
+  .openBtn {
+    display: none;
+  }
+}
+.mainBtn:hover, .mainBtn:focus {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+
+.storyTitle:hover, .storyTitle:focus, .topStoryTitle:focus, .topStoryTitle:hover, .navBar li:hover, .navBar li:focus {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

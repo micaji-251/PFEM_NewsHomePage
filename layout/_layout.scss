@@ -1,0 +1,29 @@
+.flex{
+    display: flex;
+
+    &--between{
+        justify-content: space-between;
+    }
+}
+
+body{
+    padding: 20px;
+}
+
+.none{
+    display: none;
+}
+
+section{
+    margin: 40px 0;
+}
+
+@media (min-width:800px){
+    .flex--responsive{
+        display: flex;
+    }
+}
+
+.blackScreen{
+    background-color: rgba(3, 3, 31, 0.377);
+}
