@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/micaji-251/PFEM_NewsHomePage)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://micaji-251.github.io/PFEM_NewsHomePage/)
 
 ## My process
 
