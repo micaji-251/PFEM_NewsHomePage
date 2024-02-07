@@ -1,0 +1,56 @@
+.mainTitle{
+    padding: 15px 0;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.mainText{
+    line-height: 1.5;
+    color: hsl(236, 13%, 42%);
+    font-size: 1rem;
+}
+
+.mainBtn{
+    background-color: hsl(5, 85%, 63%);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    padding: 15px 40px;
+    margin: 20px 0 10px;
+    border: none;
+}
+
+@media (min-width:800px){
+    .mainStory{
+        padding-right:20px;
+        width: 65%;
+    }
+
+    .mainStoryImgContainer{
+        height: 250px;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .mainTitle{
+        width: 50%;
+        font-size: 3rem;
+        padding-bottom: 0;
+    }
+
+    .mainTextContainer{
+        padding: 20px 0 0 30px;
+        width: 50%;
+
+    }
+
+    .mainBtn{
+        margin: 40px 0 0;
+    }
+
+}

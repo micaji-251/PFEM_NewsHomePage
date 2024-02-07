@@ -1,0 +1,35 @@
+.newStories{
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+
+    &Title{
+        color: hsl(35, 77%, 62%);
+        font-size: 2.5rem;
+    }
+}
+
+.story{
+    color: white;
+    padding: 20px 0 10px 0;
+    border-bottom: rgba(255, 255, 255, 0.208) 1px solid;
+
+    &:last-child{
+        border: none;
+    }
+    .storyTitle{
+        font-size: 1.45rem;
+    }
+
+    .storyText{
+        color: hsl(233, 8%, 69%);
+        padding: 10px 0 10px 0;
+        line-height: 1.8;
+
+    }
+}
+
+@media (min-width:800px){
+    .newStories{
+        width: 35%;
+    }
+}

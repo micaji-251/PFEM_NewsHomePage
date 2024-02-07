@@ -1,0 +1,41 @@
+.topStories{
+    margin: 20px 0;
+    
+}
+
+.topStory{
+    padding: 15px 0;
+}
+.topStoryImgContainer{
+    width:30%;
+    
+    overflow: hidden;
+
+    img{
+        width: 100%
+    }
+
+}
+
+.topStoryText{
+    width: 70%;
+    padding: 0 20px 0 20px;
+}
+
+.number{
+    color: hsl(233, 8%, 79%);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.topStoryTitle{
+    font-weight: 800;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.topStoryText2{
+    color: hsl(236, 13%, 42%);
+    line-height: 1.8;
+    font-size: 1rem;
+}

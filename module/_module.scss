@@ -1,0 +1,65 @@
+@import "./mainStory";
+@import "./newStories";
+@import "./topStories";
+
+// HEADER
+header{
+    padding: 20px 0;
+}
+    // width: 40%;
+
+@media (max-width:699px){
+
+    .navBar{
+        position: absolute;
+        padding: 120px 30px;
+        background-color: white;
+        width: 50%;
+        left:40%;
+        height: 100%;
+        top: 0px;
+
+        & li{
+            padding: 15px 0;
+        }
+
+        .closeBtn {
+            display: block;
+            position:absolute;
+            top: 40px;
+            left: 75%;
+        }
+
+        .openBtn{
+            display: block;
+        }
+
+    }
+
+}
+
+
+@media (min-width:700px){
+
+    .navBar{
+        ul{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        li{
+            width: 80px;
+        }
+
+
+        .closeBtn {
+            display: none;
+        }
+
+    }
+
+    .openBtn{
+        display: none;
+    }
+
+}
